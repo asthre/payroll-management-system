@@ -37,5 +37,34 @@ A web-based application designed to streamline employee record management and pa
 
 ### Step 1: Clone the Repository
 Navigate to your local server's root directory (e.g., `htdocs`) and clone this repository:
-```bash
-git clone [https://github.com/yourusername/payroll-management-system.git](https://github.com/yourusername/payroll-management-system.git)
+bash
+git clone [https://github.com/asthre/payroll-management-system.git](https://github.com/asthre/payroll-management-system.git)
+
+### Step 2: Database Setup
+**Option A: Automatic Setup (Recommended)**
+1.  Ensure Apache and MySQL are running in XAMPP.
+2.  Open your web browser.
+3.  Navigate to: `http://localhost/payroll-management-system/setup_database.php`
+4.  This script will automatically create the database and the necessary tables.
+
+**Option B: Manual Import**
+1.  Open phpMyAdmin (`http://localhost/phpmyadmin`).
+2.  Create a new database named `payroll_db`.
+3.  Import the `payroll_db.sql` file included in this repository.
+
+### Step 3: Access the Application
+Open your web browser and visit:
+`http://localhost/payroll-management-system`
+
+## Default Credentials
+Upon initial setup, use the following administrator credentials to log in:
+
+* **Username:** kevin
+* **Password:** Cl4$$iC
+
+## Project Structure
+* `index.php`: Main entry form for adding new payroll data.
+* `view-records.php`: Dashboard for viewing, searching, and filtering records.
+* `edit-record.php`: Interface for updating existing employee entries.
+* `export-csv.php`: Backend logic for generating CSV reports.
+* `setup_database.php`: Script to initialize database connection and default user.
